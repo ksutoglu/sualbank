@@ -32,9 +32,10 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
-$routes->get('/banka', 'Banka::index');
-$routes->get('/banka/ekle', 'Banka::ekle');
-$routes->post('/banka', 'Banka::kaydet');
+$routes->get('/banka', 'BankaController::index');
+$routes->get('/banka/ekle', 'BankaController::ekle');
+$routes->post('/banka', 'BankaController::kaydet');
+$routes->get('/banka/(:num)', 'BankaController::detay/$1');
 
 /**
  * --------------------------------------------------------------------

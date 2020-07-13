@@ -9,35 +9,39 @@
             <form method="POST" action="/banka">
                 <div class="form-group">
                     <label for="ders">Ders</label>
-                    <input type="text" class="form-control" id="ders" name="ders" placeholder="Bir Ders Girin" value="<?= old('ders') ?>">
+                    <input required type="text" class="form-control" id="ders" name="ders" placeholder="Bir Ders Girin" value="">
                 </div>
                 <div class="form-group">
                     <label for="aciklama">Açıklama</label>
-                    <textarea class="form-control" id="aciklama" name="aciklama" rows="5"><?= old('aciklama') ?></textarea>
+                    <textarea required class="form-control" id="aciklama" name="aciklama" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="grup">Grup</label>
+                    <input required type="number" class="form-control" id="grup" name="grup" placeholder="Bir soru grubu seçin" ></input>
                 </div>
                 <div class="form-group">    
                     <label for="soru">Soru</label>
-                    <textarea class="form-control" id="soru" name="soru" rows="5"><?= old('soru') ?></textarea>
+                    <textarea required class="form-control" id="soru" name="soru" rows="5"></textarea>
                 </div>    
                 <div class="form-group">    
                     <label for="asikki">A Şıkkı</label>
-                    <input type="text" class="form-control" id="asikki" name="asikki" placeholder="A Şıkkı" value="<?= old('asikki') ?>">
+                    <input required type="text" class="form-control" id="asikki" name="asikki" placeholder="A Şıkkı" >
                 </div> 
                 <div class="form-group">    
                     <label for="bsikki">B Şıkkı</label>
-                    <input type="text" class="form-control" id="bsikki" name="bsikki" placeholder="B Şıkkı" value="<?= old('bsikki') ?>">
+                    <input required type="text" class="form-control" id="bsikki" name="bsikki" placeholder="B Şıkkı" >
                 </div> 
                 <div class="form-group">    
                     <label for="csikki">C Şıkkı</label>
-                    <input type="text" class="form-control" id="csikki" name="csikki" placeholder="C Şıkkı" value="<?= old('csikki') ?>">
+                    <input required type="text" class="form-control" id="csikki" name="csikki" placeholder="C Şıkkı" >
                 </div> 
                 <div class="form-group">    
                     <label for="dsikki">D Şıkkı</label>
-                    <input type="text" class="form-control" id="dsikki" name="dsikki" placeholder="D Şıkkı" value="<?= old('dsikki') ?>">
+                    <input required type="text" class="form-control" id="dsikki" name="dsikki" placeholder="D Şıkkı" >
                 </div> 
                 <div class="form-group">    
                     <label for="esikki">E Şıkkı</label>
-                    <input type="text" class="form-control" id="esikki" name="esikki" placeholder="E Şıkkı" value="<?= old('esikki') ?>">
+                    <input required type="text" class="form-control" id="esikki" name="esikki" placeholder="E Şıkkı" >
                 </div> 
                 <button type="submit" class="btn btn-primary">KAYDET</button>
             </form>

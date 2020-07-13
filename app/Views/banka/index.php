@@ -15,22 +15,13 @@
                   <tr>
                     <th>ID</th>
                     <th>DERS</th>
-                    <th>KONU</th>
+                    <th>AÇIKLAMA</th>
                     <th>GRUP</th>
-                    <th>Start date</th>
-                    <th>Salary</th>
+                    <th>SORU</th>
+                    <th>Created date</th>
+                    <th>Updated date</th>
                   </tr>
                 </thead>
-                <tfoot>
-                  <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Office</th>
-                    <th>Age</th>
-                    <th>Start date</th>
-                    <th>Salary</th>
-                  </tr>
-                </tfoot>
                 <tbody>
                   <tr>
                     <td>Tiger Nixon</td>

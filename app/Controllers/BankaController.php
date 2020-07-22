@@ -6,7 +6,10 @@ class BankaController extends BaseController
 {
 	public function index()
 	{
-		return view('banka/index');
+		$bankaModel = new BankaModel();
+		$bankalar = $bankaModel->findAll();
+
+		return view('banka/index', ['bankalar' => $bankalar]);
 	}
 
 	//--------------------------------------------------------------------
@@ -39,17 +42,19 @@ class BankaController extends BaseController
 		];
 
 		$result = $bankaModel->insert($data);
-		dd($result);
-
+		//dd($result);
+		return redirect()->to("/banka/{$result}");
 	}
 
 	//--------------------------------------------------------------------
 
+
 	public function detay($id)
-	{
+	{	
 		$bankaModel = new BankaModel();
 		$banka = $bankaModel->find($id);
-		dd($banka);
+		//dd($banka);
+		return view("/banka/detay", ['banka'=> $banka]);
 	}
 
 	//--------------------------------------------------------------------

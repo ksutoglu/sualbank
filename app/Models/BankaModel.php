@@ -23,8 +23,7 @@ class BankaModel extends Model
         'asikki'        =>'required',
         'bsikki'        =>'required',
         'csikki'        =>'required',
-        'dsiiki'        =>'required',
+        'dsikki'        =>'required',
         'esikki'        =>'required',
     ];
-
 }

@@ -23,9 +23,9 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="/banka">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
+          <span>Banka</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="tables.html">
